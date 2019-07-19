@@ -6,13 +6,12 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 		<meta charset="utf-8">
 		<title>呈丞商务-企业资质服务</title>
-		<link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/base.css" />
-		<link rel="stylesheet" href="css/media.css" />
-		<link rel="stylesheet" href="css/swiper.min.css">
-		
-		
-	    <style>
+		<link rel="stylesheet" href="css/swiper.min.css">	
+	     <style>
+			*{
+				margin:0;
+				padding:0;
+			}
 	    html, body {
 	        position: relative;
 	        height: 100%;
@@ -25,6 +24,126 @@
 	        margin: 0;
 	        padding: 0;
 	    }
+		.first {
+			width: 100%;
+	        height: 100%;
+			background:url(images/bg_01.png) no-repeat center;
+	        background-size:cover;
+			position:relative;
+		}
+		.first .part_right {
+            position: absolute;
+			right: 2rem;
+            top: 15rem;
+		}
+		.first .part_right .up {
+            width:10rem;
+			display: block;
+		}
+		.first .part_right .down{
+			width:10rem;
+			display: block;
+			margin-top: 1rem;
+
+		}
+		.top{
+			position: relative;
+			position: relative;
+            margin-bottom: 3rem;
+			top: 2.5rem;
+		}
+		.top::before {
+			content: '';
+			display: block;
+			width: 3rem;
+			height: 0.2rem;
+			background: green;
+			position: absolute;
+			top: -0.5rem;
+
+		}
+		.top .ch {
+			font-size: 1.5rem;
+            letter-spacing: 0.3rem;
+		}
+		.top .en {
+			font-size: .2rem;
+			margin-top: 0.3rem;
+		}
+        .second {
+	        height: 100%;
+			background:url(images/bg_02.png) no-repeat center;
+	        background-size:cover;
+			position:relative;
+			padding:0 1rem;
+		}
+		.second .mid p {
+			font-size: 0.9rem;
+			padding: .5rem 0;
+		}
+		.second .down {
+			padding-top: 1.5rem;
+		}
+		.second .down .office {
+			width: 91vw;
+		}
+		.second .down .marks {
+			width: 50vw;
+            margin-left: 20vw;
+		}
+		.three {
+			height: 100%;
+			background:url(images/bg_03.png) no-repeat center;
+	        background-size:cover;
+			position:relative;
+			padding:0 1rem;
+		}
+		.three .down img {
+			width: 91vw;
+			margin-top:.6rem;
+		}
+		.three .down .pic_04 {
+			margin-top:.2rem;
+		}
+		.four{
+			height: 100%;
+			background:url(images/bg_03.png) no-repeat center;
+	        background-size:cover;
+			position:relative;
+			padding:0 1rem;
+		}
+		.four .down .pic_01 {
+			display: block;
+			float: left;
+			width:45vw;
+		}
+		.four .down .pic_02 {
+			display: block;
+           float: right;
+		   width:45vw;
+        }
+		.four .down .pic_03 {
+			display: block;
+			width: 80vw;
+			margin: 0 auto;
+		}
+		.five {
+			height: 100%;
+			background:url(images/bg_03.png) no-repeat center;
+	        background-size:cover;
+			position:relative;
+			padding:0 1rem;
+		}
+		.five .mid {
+			padding: 2rem 0;
+		}
+		.five .mid img{
+			width: 91vw;
+		}
+		.five .down p{
+			font-size: 1rem;
+           padding-bottom: .5rem;
+		}
 	    .swiper-container {
 	        width: 100%;
 	        height: 100%;
@@ -36,7 +155,7 @@
 		    -ms-flex-pack: center;		   
 		    -ms-flex-align: center;		  
 	    }
-	 .wrap .up{
+	    .wrap .up{
 	    	    position: fixed;
 			    bottom: 3vh;
 			    left: 45vw;
@@ -48,7 +167,11 @@
 		from{transform: translateY(0px) scale(.5);}
 		to{transform: translateY(-20px) scale(.8);}
 	   }
-	 
+	  .conWraper{
+	  	/*height:120vh!important;*/
+	  	background:url(images/reportBg.jpg) no-repeat center;
+	    background-size:cover;
+	  }	 
 	    </style>
 	</head>
 <body>
@@ -58,28 +181,90 @@
   	<div class="swiper-container" id="app">
         <div class="swiper-wrapper pos">       
             <div class="swiper-slide">
-                  <img src="images/pic_01.jpg" class="license_01" width="100%" height="100%" alt="">
+                  <div class="first">
+					  <div class="part_right">
+							<img src="images/first_01.png" class="up" alt="">
+							<img src="images/first_02.png" class="down" alt="">
+					  </div>
+					
+				  </div>
             </div>
             <div class="swiper-slide ">
-				<img src="images/pic_02.jpg" class="license_03" width="100%" height="100%" alt="">
+				<div class="second">
+					 <div class="top">
+						 <p class="ch">公司简介</p>
+						 <p class="en">COMPANY&nbsp;PROFILE</p>
+					 </div>
+					 <div class="mid">
+						  <p>上海呈丞商务咨询有限公司，成立于2013年，是一家专属从事建筑行业一站式服务代理机构。</p>
+						  <p>主营业务：代为办理建筑行业各类“施工总包资质、施工专项资质、劳务分包资质、设计资质、生产许可证；
+							  提供建造师、建筑师、工程师、岗位证书、技术工人等职位咨询”等服务。</p>
+						  <p>多年来呈丞拥有广泛的长期合作客户，获得了建筑行业客户的信任和支持；
+							  呈丞始终坚持“致天下之治者在人才，成天下之才者在教育”，秉承诚实、诚信，成就未来原则，
+							  以服务客户为宗旨，专注于为建筑业提供“诚信、务实”的服务渠道，为建筑行业打造一条龙专属的服务平台。</p>
+					 </div>
+					 <div class="down">
+							<img src="images/second_01.jpg" class="office" alt="">
+							<img src="images/second_02.png" class="marks" alt="">
+					 </div>
+				</div>
             </div>
             <div class="swiper-slide ">
-				<img src="images/pic_03.jpg" class="license_02" width="100%" height="100%" alt="">
+				<div class="three">
+						<div class="top">
+								<p class="ch">主营业务</p>
+								<p class="en">MAIN&nbsp;BUSINESS</p>
+						</div>
+						<div class="down">
+								<img src="images/third_01.png" class="pic_01" alt="">
+								<img src="images/third_02.png" class="pic_02"  alt="">
+								<img src="images/third_03.png" class="pic_03"  alt="">
+								<img src="images/third_04.png" class="pic_04"  alt="">
+						</div>
+
+				</div>
             </div>
             <div class="swiper-slide ">
-				<img src="images/pic_04.jpg" class="pic_01" width="100%" height="100%" alt="">
+				<div class="four">
+						<div class="top">
+								<p class="ch">案例展示</p>
+								<p class="en">CASE&nbsp;SHOW</p>
+						</div>
+						<div class="down">
+							<p>
+								<img src="images/four_01.png" class="pic_01" alt="">
+								<img src="images/four_02.png" class="pic_02" alt="">
+							</p>
+							<p>
+								<img src="images/four_03.png" class="pic_03" alt="">
+							</p>
+						</div>
+
+				</div>
             </div>
             <div class="swiper-slide ">
-                  <img src="images/pic_05.jpg" class="pic_02" width="100%" height="100%" alt="">
+                 <div class="five">
+						<div class="top">
+								<p class="ch">联系我们</p>
+								<p class="en">CANTACT&nbsp;US</p>
+						</div>
+						<div class="mid">
+							   <img src="images/five_01.png" class="pic_01" alt="">
+						</div>
+						<div class="down">
+                            <p>公司名称：上海呈丞商务咨询有限公司</p>
+                            <p>地址：上海市金山区朱泾镇秀州街428号205室</p>
+                            <p>联系人：郭文婷</p>
+                            <p>咨询热线：18301775747</p>
+						</div>
+	
+				 </div>
             </div>
             
         </div>
         <!-- Add Pagination -->
        
     </div>
-	<script src="js/jquery-2.1.0.min.js"></script>
-	<script src="js/bscroll.min.js"></script>		
-	<script src="js/vue.js"></script>
     <script src="js/swiper.min.js"></script>
     <script>
      	//关闭弹框
@@ -92,7 +277,7 @@
 	        paginationClickable: true,
 	        direction: 'vertical',
 	        onTouchEnd: function(swiper){
-     
+               console.log(swiper.activeIndex)
 		      if(swiper.activeIndex>=4){
 		      	 document.getElementsByClassName('wrap')[0].style.display='none';
 		      }else{

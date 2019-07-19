@@ -63,35 +63,38 @@
      </div>
   	<div class="swiper-container" id="app">
         <div class="swiper-wrapper pos">
-            <div class="swiper-slide">
-                  <img src="images/suzhou1.jpg" class="one" width="100%" height="100%" alt="">
+            <div class="swiper-slide conWraper">
+				<h1>公司简介</h1>
+				<p>
+				 上海呈丞商务咨询有限公司，成立于2013年，是一家专属从事建筑行业一站式服务代理机构。主营业务：
+				 代为办理建筑行业各类“施工总包资质、施工专项资质、劳务分包资质、设计资质、生产许可证；提供建造师、建筑师、工程师、岗位证书、技术工人等职位咨询”等服务。
+				 多年来呈丞拥有广泛的长期合作客户，获得了建筑行业客户的信任和支持；
+				 呈丞始终坚持“致天下之治者在人才，成天下之才者在教育”，秉承诚实、诚信，成就未来原则，以服务客户为宗旨，
+				 专注于为建筑业提供“诚信、务实”的服务渠道，为建筑行业打造一条龙专属的服务平台。
+				</p>
             </div>          
-            <div class="swiper-slide">
-                  <img data-src="images/suzhou2.jpg" class="two" width="100%" height="100%" alt="">
+            <div class="swiper-slide conWraper">
+                  <img src="images/license_01.jpg" class="license_01" width="100%" alt="">
             </div>
-            <div class="swiper-slide">
-                  <img data-src="images/suzhou1.gif" class="three" width="100%" height="100%" alt="">
+            <div class="swiper-slide conWraper">
+				<img src="images/license_03.jpg" class="license_03" width="100%" alt="">
             </div>
-            <div class="swiper-slide">
-                  <img data-src="images/suzhou3.jpg" class="four" width="100%" height="100%" alt="">
+            <div class="swiper-slide conWraper">
+				<img src="images/license_02.jpg" class="license_02" width="100%" alt="">
             </div>
-            <div class="swiper-slide">
-                  <img data-src="images/suzhou4.jpg" class="five" width="100%" height="100%" alt="">
+            <div class="swiper-slide conWraper">
+				<img src="images/pic_01.jpg" class="pic_01" width="100%" alt="">
             </div>
-            <div class="swiper-slide">
-                  <img data-src="images/suzhou5.jpg" class="six" width="100%" height="100%" alt="">
+            <div class="swiper-slide conWraper">
+                  <img src="images/pic_02.jpg" class="pic_02" width="100%" alt="">
             </div>
             
             <div class="swiper-slide conWraper">
             
-				   <h1>公司简介</h1>
-				   <p>
-					上海呈丞商务咨询有限公司，成立于2013年，是一家专属从事建筑行业一站式服务代理机构。主营业务：
-					代为办理建筑行业各类“施工总包资质、施工专项资质、劳务分包资质、设计资质、生产许可证；提供建造师、建筑师、工程师、岗位证书、技术工人等职位咨询”等服务。
-					多年来呈丞拥有广泛的长期合作客户，获得了建筑行业客户的信任和支持；
-					呈丞始终坚持“致天下之治者在人才，成天下之才者在教育”，秉承诚实、诚信，成就未来原则，以服务客户为宗旨.
-					专注于为建筑业提供“诚信、务实”的服务渠道，为建筑行业打造一条龙专属的服务平台。
-				   </p>
+				   <h1>联系我们</h1>
+				   <p>公司地址：上海市金山区朱泾镇秀州街428号205室 </p>
+				   <p>联系人：郭文婷</p>
+				   <p>手机：18301775747</p>
 	               
 	     </div>
             
@@ -111,26 +114,7 @@
 	        paginationClickable: true,
 	        direction: 'vertical',
 	        onTouchEnd: function(swiper){
-              switch (swiper.activeIndex) {
-                  case 0:
-				  document.getElementsByClassName('two')[0].src=document.getElementsByClassName('two')[0].src || 'images/suzhou2.jpg';
-				  break;
-				  case 1:
-				  document.getElementsByClassName('three')[0].src=document.getElementsByClassName('three')[0].src || 'images/suzhou1.gif';
-				  break;
-				  case 2:
-				  document.getElementsByClassName('four')[0].src=document.getElementsByClassName('four')[0].src || 'images/suzhou3.jpg';
-				  break;
-				  case 3:
-				  document.getElementsByClassName('five')[0].src=document.getElementsByClassName('five')[0].src || 'images/suzhou4.jpg';
-				  break;
-				  case 4:
-				  document.getElementsByClassName('six')[0].src=document.getElementsByClassName('six')[0].src || 'images/suzhou5.jpg';
-				  break;
-				  case 5:
-				  document.getElementsByClassName('six')[0].src=document.getElementsByClassName('six')[0].src || 'images/suzhou5.jpg';
-				  break;
-			  }
+     
 		      if(swiper.activeIndex>=5){
 		      	 document.getElementsByClassName('wrap')[0].style.display='none';
 		      }else{
